@@ -1,22 +1,16 @@
-#Workflow
-#Should have a name
+# Workflow
+# Should have a name
 name: Hello
 
 on:
   workflow_dispatch:
 
-#Jobs : tells what workflow should do and there can be more than one jobs
-#Should be inside the workflow
+# Jobs: tells what workflow should do
+# There can be more than one job
 jobs:
   say-hello:
-    runs-on: ubantu-latest
+    runs-on: ubuntu-latest
+
     steps:
       - name: Say hello to everyone
         run: echo "Hello Dosto"
-
-
-#Steps
-#Should be inside the jobs
-
-#Actions
-#Should be inside the Steps
